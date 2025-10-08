@@ -49,11 +49,8 @@ coverage/
 .temp/
 .tmp/
 
-# Local documentation (Chinese, not for GitHub)
+# Local documentation (not for GitHub)
 requirements.md
-QUICK_START.md
-TROUBLESHOOTING.md
-MONGODB_SETUP.md
 PROJECT_STATUS.md
 self_read.md
-GIT_UPLOAD_GUIDE.md
+setup_guide(self_record_purpose)/
