@@ -40,17 +40,17 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// Import routes (will be added in later phases)
-// import authRoutes from './routes/auth.js';
+// Import routes
+import authRoutes from './routes/auth.js';
+import adminRoutes from './routes/admin.js';
 // import internshipRoutes from './routes/internships.js';
 // import applicationRoutes from './routes/applications.js';
-// import adminRoutes from './routes/admin.js';
 
 // Use routes
-// app.use('/api/auth', authRoutes);
+app.use('/api/auth', authRoutes);
+app.use('/api/admin', adminRoutes);
 // app.use('/api/internships', internshipRoutes);
 // app.use('/api/applications', applicationRoutes);
-// app.use('/api/admin', adminRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
